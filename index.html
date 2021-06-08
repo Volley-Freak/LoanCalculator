@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="error"><p>Please Check Your Numbers!</p></div>
+      <div class="heading">
+        <h1>Loan Calculator</h1>
+      </div>
+      <hr />
+      <div class="main-content">
+        <div class="user-form">
+          <form class="loan-form" id="user-form">
+            <div class="user-inputs">
+              <input
+                class="value-input"
+                type="number"
+                name="loan-amount"
+                id="loan-amount"
+                placeholder="$  Loan Amount"
+              />
+              <input
+                class="value-input"
+                type="number"
+                name="interest"
+                id="interest"
+                placeholder="%  Interest"
+              />
+              <input
+                class="value-input"
+                type="number"
+                name="years-to-repay"
+                id="years-to-repay"
+                placeholder="Years To Repay"
+              />
+              <input type="submit" value="Calculate" id="submit-btn" />
+            </div>
+          </form>
+        </div>
+        <hr />
+        <div class="image">
+          <h1>Calculating...</h1>
+          <img src="/images/loading.gif" alt="" />
+        </div>
+        <div class="calculate-result">
+          <div class="result-heading"><h1>Results</h1></div>
+          <div class="result">
+            <h4>Monthly Payment :</h4>
+            <input
+              class="result-input"
+              type="number"
+              name="monthly-payment"
+              id="monthly-payment"
+              disabled
+            />
+          </div>
+          <div class="result">
+            <h4>Total Payment :</h4>
+            <input
+              class="result-input"
+              type="number"
+              name="total-payment"
+              id="total-payment"
+              disabled
+            />
+          </div>
+          <div class="result">
+            <h4>Total Interest :</h4>
+            <input
+              class="result-input"
+              type="number"
+              name="total-interest"
+              id="total-interest"
+              disabled
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
